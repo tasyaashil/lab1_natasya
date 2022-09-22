@@ -25,6 +25,7 @@ def show_wishlist(request):
     'last_login': request.COOKIES['last_login'],
     }
     return render(request, "wishlist.html", context)
+    
 def show_wishlistxml(request):
     data = BarangWishlist.objects.all()
     context = {
