@@ -50,6 +50,14 @@ def show_wishlistxmljson(request, id):
     }
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
+def show_wishlistajax(request):
+    data = BarangWishlist.objects.all()
+    context = {
+    'list_barang': data,
+    'nama': 'Natasya Ashil Zhafirah'
+    }
+    return render(request, "wishlist_ajax.html", context)
+
 def register(request) :
     form = UserCreationForm()
 

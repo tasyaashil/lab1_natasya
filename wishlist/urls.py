@@ -11,5 +11,6 @@ urlpatterns = [
     path('register/', register, name='register'), #sesuaikan dengan nama fungsi yang dibuat
     path('login/', login_user, name='login'), #sesuaikan dengan nama fungsi yang dibuat
     path('logout/', logout_user, name='logout'), #sesuaikan dengan nama fungsi yang dibuat
+    path('ajax/', show_wishlistajax, name='show_wishlistajax'), #sesuaikan dengan nama fungsi yang dibuat
 
 ]
